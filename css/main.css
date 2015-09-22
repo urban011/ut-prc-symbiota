@@ -298,4 +298,5 @@ ul#hor_dropdown li:hover ul li a:hover {
     color: #ffffff;
     padding: 12px 21px 12px 21px;
     border-radius: 10px;
+    cursor: hand;
 }

@@ -64,10 +64,11 @@ $collManager->reset();
             <input type='reset' value='Reset Form' name='reset'>
 			<div style="margin:10 0 10 0;"><hr></div>
 			<div style='float:right;margin:10px;'>
-				<input style="border: 1px solid gray;" type="image" name="display1" id="display1" class="hoverHand" src='../images/search.png'
-					onmouseover="javascript: this.src = '../images/search_rollover.png';"
-					onmouseout="javascript: this.src = '../images/search.png';"
-					title="Click button to display the results of your search">
+                <button title="next" title="Click button to display the results of your search" class="link-button">search</button>
+<!--				<input style="border: 1px solid gray;" type="image" name="display1" id="display1" class="hoverHand" src='../images/search.png'-->
+<!--					onmouseover="javascript: this.src = '../images/search_rollover.png';"-->
+<!--					onmouseout="javascript: this.src = '../images/search.png';"-->
+<!--					title="Click button to display the results of your search">-->
 			</div>
 			<div>
 				<h1>Taxonomic Criteria:</h1>
@@ -217,10 +218,11 @@ $collManager->reset();
 				<input type="text" id="eventdate2" size="32" name="eventdate2" style="width:100px;" value="<?php if(array_key_exists("eventdate2",$collArray)) echo $collArray["eventdate2"]; ?>" title="End date of range; leave blank if searching for single date" />
 			</div>
 			<div style="float:right;">
-				<input style="border: 1px solid gray;" id="display2" name="display2" type="image" class="hoverHand" src='../images/search.png'
-					onmouseover="javascript:this.src = '../images/search_rollover.png';"
-					onmouseout="javascript:this.src = '../images/search.png';"
-					title="Click button to display the results of your search">
+                <button title="next" title="Click button to display the results of your search" class="link-button">search</button>
+<!--				<input style="border: 1px solid gray;" id="display2" name="display2" type="image" class="hoverHand" src='../images/search.png'-->
+<!--					onmouseover="javascript:this.src = '../images/search_rollover.png';"-->
+<!--					onmouseout="javascript:this.src = '../images/search.png';"-->
+<!--					title="Click button to display the results of your search">-->
 			</div>
 			<div>
 				<h1>Collection Object Criteria:</h1>
