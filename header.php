@@ -29,9 +29,13 @@ if (top.frames.length!=0)
 					<?php
 					}
 					else{
+                        $qs = '';
+                        if (isset($_SERVER['QUERY_STRING'])) {
+                            $qs = $_SERVER['QUERY_STRING'];
+                        }
 					?>
 						<span style="">
-							<a href="<?php echo $clientRoot."/profile/index.php?refurl=".$_SERVER['PHP_SELF']."?".$_SERVER['QUERY_STRING']; ?>">
+							<a href="<?php echo $clientRoot."/profile/index.php?refurl=".$_SERVER['PHP_SELF']."?".$qs; ?>">
 								Log In
 							</a>
 						</span>
