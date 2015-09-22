@@ -1,0 +1,10 @@
+./ImageBatchHandler.php: line 1: ?php: No such file or directory
+./ImageBatchHandler.php: line 2: syntax error near unexpected token `'America/Phoenix''
+./ImageBatchHandler.php: line 2: `date_default_timezone_set('America/Phoenix');'
+PHP Warning:  mysqli::mysqli(): Headers and client library minor version mismatch. Headers:50541 Library:50626 in /usr/local/symbiota/collections/specprocessor/standalone_scripts/ImageBatchConnectionFactory.php on line 23
+PHP Warning:  opendir(/usr/local/symbiota/prc/images/originals/logs/): failed to open dir: Permission denied in /usr/local/symbiota/classes/ImageBatchProcessor.php on line 310
+PHP Warning:  opendir(/usr/local/symbiota/prc/images/originals/logs/): failed to open dir: Permission denied in /usr/local/symbiota/classes/ImageBatchProcessor.php on line 310
+PHP Warning:  mysqli::mysqli(): Headers and client library minor version mismatch. Headers:50541 Library:50626 in /usr/local/symbiota/config/dbconnection.php on line 30
+PHP Warning:  mysqli::mysqli(): Headers and client library minor version mismatch. Headers:50541 Library:50626 in /usr/local/symbiota/config/dbconnection.php on line 30
+PHP Warning:  mysqli::mysqli(): Headers and client library minor version mismatch. Headers:50541 Library:50626 in /usr/local/symbiota/config/dbconnection.php on line 30
+PHP Warning:  mysqli::mysqli(): Headers and client library minor version mismatch. Headers:50541 Library:50626 in /usr/local/symbiota/config/dbconnection.php on line 30

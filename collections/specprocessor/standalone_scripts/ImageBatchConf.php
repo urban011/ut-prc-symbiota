@@ -1,0 +1,68 @@
+<?php 
+//Variables needing security
+
+//Server root is generally needed since scripts may be run from outside of folder (including crontab runs)
+//This is the path base folder of portal (e.g. trunk)
+$serverRoot = '/usr/local/symbiota';
+
+//Base folder containing herbarium folder ; read access needed
+$sourcePathBase = '/usr/local/symbiota/prc/images/originals';
+//Folder where images are to be placed; write access needed
+$targetPathBase = '/usr/local/symbiota/prc/images/web';
+
+//Url base needed to build image URL that will be saved in DB
+//Only needed if scripts are run on an exteral server
+$imgUrlBase = '';
+
+//Title (e.g. CNALH) and Path to where log files will be placed
+$logTitle = 'PRC';
+$logProcessorPath = $targetPathBase.'/logs';
+//0 = silent, 1 = html, 2 = log file
+$logMode = 2;
+
+//If record matching PK is not found, should a new blank record be created?
+$createNewRec = false;
+
+//Weather to copyover images with matching names (includes path) or rename new image and keep both
+$imgExists = 2;
+
+$webPixWidth = 1400;
+$tnPixWidth = 200;
+$lgPixWidth = 3600;
+$webFileSizeLimit = 300000;
+$lgFileSizeLimit = 3000000;
+
+//Whether to use ImageMagick for creating thumbnails and web images. ImageMagick must be installed on server.
+// 0 = use GD library (default), 1 = use ImageMagick
+$useImageMagickBatch = 1;
+
+//Value between 0 and 100
+$jpgQuality = 80;
+
+$webImg = 1;			// 1 = evaluate source and import, 2 = import source and use as is, 3 = map to source  
+$tnImg = 1;				// 1 = create from source, 2 = import source, 3 = map to source, 0 = exclude 
+$lgImg = 1;				// 1 = import source, 2 = map to source, 3 = import large version (_lg.jpg), 4 = map large version (_lg.jpg), 0 = exclude
+
+$keepOrig = 1;
+
+//0 = write image metadata to file; 
+//1 = write metadata to a Symbiota database (connection variables must be set)
+$dbMetadata = 1;
+
+/**
+ * Array of parameters for collections to process.
+ * collid => array( 
+ *     'pmterm' => '/A(\d{8})\D+/', 		// regular expression to match collectionCode and catalogNumber in filename, first backreference is used as the catalogNumber. 
+ *     'prpatt' => '/^/',           		// optional regular expression for match on catalogNumber to be replaced with prrepl. 
+ *     'prrepl' => 'barcode-',       		// optional replacement to apply for prpatt matches on catalogNumber.
+ *     										// given above description, 'A01234567.jpg' will yield catalogNumber = 'barcode-01234567'
+ *     'sourcePathFrag' => 'asu/lichens/'	// optional path fragment appended to $sourcePathBase that is specific to particular collection. Not typcially needed.  
+ * )
+ * 
+ */
+
+$collArr = array(
+	1 => array('pmterm' => '/^TEX(\d{8})\D*/', 'prpatt' => '/^/', 'prrepl' => 'TEX'),
+	2 => array('pmterm' => '/^LL(\d{8})\D*/', 'prpatt' => '/^/', 'prrepl' => 'LL')
+);
+?>

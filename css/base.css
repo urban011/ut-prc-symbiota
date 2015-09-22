@@ -1,0 +1,302 @@
+/* Do not modify styles within this file
+ * Instead, modify styles within the main.css file to override the default styles within this file 
+ * 
+ **/
+body{
+	margin:	8px;
+	margin-left: auto;
+	margin-right: auto;
+	width:		900px; 
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/*Main table framework*/
+#maintable{
+	border-spacing: 0px;
+	width:		900px; 
+	height:		500px;
+}
+
+#maintable td{
+ 	vertical-align: top;
+	font-size: 12px;
+}
+
+td.header{
+}
+
+td.middleleft{
+	width:		160px;
+}
+
+td.middleleftnomenu{
+	width:	20px;	
+}
+
+td.middlecenter{
+ 	height:	350px;		
+}
+
+td.middleright{
+	width:	15px;
+}
+
+
+/*Left menu components*/
+div.menuheader{
+	margin-bottom:	15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.menuheader a{
+	color: 	#000000;
+}
+
+div.menuheader a:hover {
+	color: 	#000000;
+}
+
+div.menusubheader{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px 0px 0px 5px;
+}
+
+div.menusubheader a{
+	color: #000000;
+}
+
+div.menusubheader a:hover {
+	color: #000000;
+}
+
+div.menuitem {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px 0px 0px 10px;
+}
+
+div.menuitem a {
+	color: #000000;
+}
+
+div.menuitem a:hover {
+	color: #C0C0C0;
+}
+
+
+/*Central div and general components */
+#innertext{
+	margin:	15px;	
+	background-color: #FFFFFF;
+}
+
+#innertext a{
+
+}
+
+#innertext a:hover{
+
+}
+
+form div {
+	margin-top:	2px;
+}
+
+a{
+	color: 		#2C405E;
+    text-decoration: none;	
+}
+
+a:hover{
+	color: black;
+    text-decoration: underline;
+}
+
+/* Spans that use javascript to add clickable link behaviors */
+span[class=link] { 
+	color: 		#2C405E;
+    text-decoration: none;	
+}
+
+span[class=link]:hover { 
+	color: black;
+    text-decoration: underline;	
+}
+
+/* General Image thumbnails   */
+div.tndiv{
+	float: left;
+	text-align: center;
+	width: 165px;
+	height: 250px;
+	page-break-before:auto;
+	page-break-inside:avoid;
+}
+
+div.tnimg{
+	position: relative;
+	overflow:	hidden;
+	width:	160px;
+	height:	160px;
+	border:	1px solid gray;
+}
+
+div.tnimg a{
+
+}
+
+div.tnimg img{
+	position: absolute;
+	top: -9999px;
+	bottom: -9999px;
+	left: -9999px;
+	right: -9999px;
+	margin: auto;
+	height: 100%;
+}	
+
+/* styled table */
+
+table.styledtable{
+	width:				100%; 
+	border-collapse:	collapse; 
+}
+table.styledtable th {
+	text-align:			left; 
+	padding:			4px;
+	border:				1px solid gray; 
+	background-color:	#dbe5f1; 
+	color:				black; 
+}
+table.styledtable td {
+	font-size:		1em; 
+	padding:		3px;
+	border:			1px solid gray; 
+	background-color: #efefef;
+}
+table.styledtable tr.alt td {
+	color:				#000000; 
+	/*background-color:	#FCFCFC; */
+	background-color: #dfdfdf;
+}
+
+/*  navpath styles */
+div.navpath {
+	color: #000000;
+	font-size: 11px;
+}
+
+div.navpath a {
+	font-size: 11px;
+	color: #000000;
+}
+
+div.navpath a:hover {
+	color: #C0C0C0;
+	font-size: 11px;
+}
+
+/*Download buttons on the search display pages*/
+div.button {
+	background-color:	#FFFFD7;
+	padding:			3px;
+	border:				1px outset #A0A0A0;
+}
+
+div.button img {
+	border:	0px;	
+}
+
+div.button:hover {
+	border:	1px inset #A0A0A0;
+}
+
+/* misc page specific items */
+#cloptiondiv{
+	margin:		5px;
+	width:		250px;
+	text-align:	left;
+	float:		right;
+}
+
+#taxonfilterdiv{
+	padding:			5px;
+	background-color:	#FFFFCC;
+	border:				1px solid;
+}
+
+#taxonfilterdiv{
+	 margin:	3px;
+}
+
+
+/* /collections/ folder pages */
+.categorytitle a{ 
+	font-weight: bold; 
+	color:		black; 
+	font-size:	110%; 
+}
+
+.collectiontitle a{
+	font-weight: bold;
+	color: 		 #000000;
+}
+
+.collectiontitle a:hover{
+	color: 	#000000;
+}
+
+#omlisttable{
+	 width:	610px;
+}
+
+#omlisttable img{
+    border: medium double #990000;
+}
+
+/* Quick Search Plugin */
+#quicksearchtext{
+	margin-top:0px;
+	padding-bottom:0px;
+	float: left;
+}
+
+#quicksearchbutton{
+	margin-left:10px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	float: left;
+}
+
+#quicksearchtaxon{
+	width: 250px;
+	float: left;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Slideshow Plugin */
+#slideshowcontainer{
+	border: 2px solid black;
+	border-radius:10px;
+	padding:10px;
+}
+
+/* misc */
+div.genericpopup{
+	position:				absolute;
+	display:				none;
+	width:					300px;
+	background-color:		#EFEFEF;
+	padding:				10px;
+	-moz-border-radius: 	5px;
+	-webkit-border-radius: 	5px;
+	border:					black solid 3px;
+}
