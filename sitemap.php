@@ -74,21 +74,21 @@ $smManager = new SiteMapManager();
 			}
 			?>
 
-			<div style="margin-top:10px;"><h2>Dynamic Species Lists</h2></div>
-			<ul>
-				<li>
-					<a href="checklists/dynamicmap.php?interface=checklist">
-						Checklist
-					</a> 
-					- dynamically build a checklist using georeferenced specimen records
-				</li>
-				<li>
-					<a href="checklists/dynamicmap.php?interface=key">
-						Dynamic Key
-					</a> 
-					- dynamically build a key using georeferenced specimen records
-				</li>
-			</ul>
+<!--			<div style="margin-top:10px;"><h2>Dynamic Species Lists</h2></div>-->
+<!--			<ul>-->
+<!--				<li>-->
+<!--					<a href="checklists/dynamicmap.php?interface=checklist">-->
+<!--						Checklist-->
+<!--					</a> -->
+<!--					- dynamically build a checklist using georeferenced specimen records-->
+<!--				</li>-->
+<!--				<li>-->
+<!--					<a href="checklists/dynamicmap.php?interface=key">-->
+<!--						Dynamic Key-->
+<!--					</a> -->
+<!--					- dynamically build a key using georeferenced specimen records-->
+<!--				</li>-->
+<!--			</ul>-->
 
 			<fieldset style="margin:30px 0px 10px 10px;padding-left:25px;padding-right:15px;">
 				<legend><b>Data Management Tools</b></legend>
